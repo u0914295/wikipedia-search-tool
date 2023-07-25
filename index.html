@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Wikipedia Search</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Wikipedia Search</h1>
+        <form id="search-form">
+            <div class="input-field">
+                <input id="search" type="text" class="validate">
+                <label for="search">Search Wikipedia</label>
+            </div>
+            <div class="button-group"> 
+                <button class="btn" type="submit" name="action">Search</button>
+                <button class="btn history-button" id="history-button" type="button" name="action">Show history</button>
+            </div>
+        </form>
+
+
+<div id="history-modal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2>Search history</h2>
+            <button class="modal-close-btn" id="history-close">Close</button>
+        </div>
+        <div id="history-body"></div>
+    </div>
+</div>
+
+
+
+        <ul id="results">
+            <!-- Results go here -->
+        </ul>
+
+        <div id="pagination">
+            <!-- Pagination goes here -->
+        </div>
+    </div>
+
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 id="modal-title"></h2>
+            <button class="modal-close-btn" id="modal1-close">Close</button>
+          </div>
+          <img id="modal-img" src="" alt="No image available">
+          <div id="modal-body"></div>
+          <a id="read-more" href="" target="_blank">Read more on Wikipedia</a>
+        </div>
+      </div>
+
+      
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
